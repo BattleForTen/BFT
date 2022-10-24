@@ -1,0 +1,18 @@
+1. NFTContract.sol
+
++ You should change:
+	- token address at line 1939
+	- Minting cost (level 1) and Upgrade cost (level 2->5) at line 1958 -> 1962
+	
+	
++ The contract include all functions of ERC721 and some special functions bellow
+	- mintCharacter(uint256 characterType)
+	- upgradeCharacter(uint characterId1, uint characterId2)
+	- withdrawFund --> To withdraw token
+	- toggleMintingOnOff to stop or start minting
+	
+	
+2. RewardTreasure.sol
+
++ Change token address at 407
++ Function to send token to people: award(recipient, amount)
